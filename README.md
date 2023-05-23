@@ -12,13 +12,13 @@ poetry install
 
 ## Getting Started
 
-### Scanner
+### Encoder
 
 ```shell
 qr generate "hellworld" output.png
 ```
 
-### Encoder
+### Scanner
 
 ```shell
 qr scan output.png
