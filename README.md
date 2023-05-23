@@ -15,13 +15,13 @@ poetry install
 ### Encoder
 
 ```shell
-qr generate "hellworld" output.png
+qr_cli generate "hellworld" output.png
 ```
 
 ### Scanner
 
 ```shell
-qr scan output.png
+qr_cli scan output.png
 ```
 
 ## Problems
