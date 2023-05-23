@@ -1,11 +1,12 @@
 import click
 import cv2
-from pyzbar import pyzbar
 import qrcode
+from pyzbar import pyzbar
 
 
 @click.group()
 def cli():
+    """The command line interface"""
     pass
 
 

@@ -1,9 +1,12 @@
 [tool.poetry]
-name = "qrcode_test"
+name = "qr_cli"
 version = "0.1.0"
-description = "qrcode scanner and encoder"
+description = "qrcode scanner and encoder command line tool"
 authors = ["Alias <yygggg@foxmail.com>"]
 license = "MIT"
+packages= [
+    {include = "qr"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -14,8 +17,12 @@ black = "^23.3.0"
 flake8 = "^6.0.0"
 pre-commit = "^3.3.2"
 qrcode = "^7.4.2"
+flake8-docstrings = "^1.7.0"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+qr_cli = "qr.main:cli"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
